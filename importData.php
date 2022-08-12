@@ -37,7 +37,7 @@ if(isset($_POST['importSubmit'])){
                 $prevResult = $db->query($prevQuery);
                 if($prevResult->num_rows > 0){
                     // Insert member data in the database
-                    $db->query("INSERT INTO vehicle (name, phone, email,address,vnplate,vmodel,speed,fine) VALUES ('".$name."', '".$phone."', '".$email."','".$address."','".$vnplate."','".$vmodel."','".$speed."','".$fine."')");
+                    $db->query("INSERT INTO abul (name, phone, email,address,vnplate,vmodel,speed,fine) VALUES ('".$name."', '".$phone."', '".$email."','".$address."','".$vnplate."','".$vmodel."','".$speed."','".$fine."')");
                 }
             }
             

@@ -32,7 +32,7 @@ if(!empty($_GET['status'])){
     <title>Import Vehicle Data from Csv file</title>
     <!-- <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
     <link  href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600,800&display=swap">
@@ -55,11 +55,22 @@ if(!empty($_GET['status'])){
                     <a><?php echo( "<button class='btn btn-primary' onclick= \"location.href='index.php'\">Home</button>");?>
                     </a>
                 
-                
-                    <a><?php echo( "<button class='btn btn-primary' onclick= \"location.href='search.php'\">Search Info</button>");?>
-                    </a>
+    
+                    
             
                 </div>
+                
+  
+  
+                <form>
+  
+  <div class="form-group row speed1">
+    <label for="inputPassword" class=" col-form-label">Speed</label>
+    <div class="col-sm-10">
+      <input type="Speed" class="form-control" id="inputPassword" placeholder="Speed">
+    </div>
+  </div>
+</form>
             
 
             <div class="text-center col-md-12"><h2>Import Vehicle List</h2></div>
@@ -86,6 +97,11 @@ if(!empty($_GET['status'])){
                     <input type="submit" class="btn btn-primary" name="importSubmit" value="IMPORT">
                 </form>
             </div>
+                <div class="search1">
+                    <a>
+                        <?php echo( "<button class='btn btn-primary search1' onclick= \"location.href='search.php'\">Search Info</button>");?>
+                    </a>
+                </div>
             </div>
             </div> 
             

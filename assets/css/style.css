@@ -241,3 +241,10 @@ div.pagination span.disabled {
   font-weight: 800;
   font-size: 1.5em;
 }
+.search1 {
+  text-align: center !important;
+  margin: 20px auto;
+}
+.form-group.row.speed1 {
+  margin: 15px 0 0 0;
+}

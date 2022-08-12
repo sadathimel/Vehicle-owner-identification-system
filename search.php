@@ -70,7 +70,7 @@ if(!empty($_GET['status'])){
         <tbody>
         <?php
         // Get member rows
-        $result = $db->query("SELECT * FROM vehicle ORDER BY id DESC");
+        $result = $db->query("SELECT * FROM abul ORDER BY id DESC");
         if($result->num_rows > 0){
             while($row = $result->fetch_assoc()){
         ?>
