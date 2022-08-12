@@ -88,7 +88,7 @@ if(!empty($_GET['status'])){
                 if ($t < "81") {
                 echo "<div style='color:green;'>normal</div>";
                 } else {
-                echo "<div style='color:red;'>Over Speed</div>" . $t - "80"; 
+                echo "<div style='color:red;'>Over Speed</div>"; 
                 } ?></td>
             </tr>
         <?php } }else{ ?>
@@ -96,6 +96,14 @@ if(!empty($_GET['status'])){
         <?php } ?>
         </tbody>
     </table> 
+    <div class="home">
+        <a class="a"><?php echo( "<button class='btn btn-primary' onclick= \"location.href='index.php'\">Share</button>");?>
+        </a>
+    
+        <a class="a"><?php echo( "<button class='btn btn-primary' onclick= \"location.href='index.php'\">Print</button>");?>
+        </a>
+    
+    </div>
 </div>
 
 <!-- Show/hide CSV upload form -->
