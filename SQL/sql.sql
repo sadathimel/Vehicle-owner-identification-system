@@ -1,4 +1,4 @@
-CREATE TABLE `vehicle` (
+CREATE TABLE `himel` (
  `id` int(11) NOT NULL AUTO_INCREMENT,
  `name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
  `phone` varchar(15) COLLATE utf8_unicode_ci NOT NULL,

@@ -70,7 +70,7 @@ if(!empty($_GET['status'])){
         <tbody>
         <?php
         // Get member rows
-        $result = $db->query("SELECT * FROM abul ORDER BY id DESC");
+        $result = $db->query("SELECT * FROM himel ORDER BY id DESC");
         if($result->num_rows > 0){
             while($row = $result->fetch_assoc()){
         ?>
@@ -86,7 +86,7 @@ if(!empty($_GET['status'])){
                 <td><?php echo $row['fine']; ?></td>
                 <td><?php $t = $row['speed'];
                 if ($t < "81") {
-                echo "<div style='green:red;'>normal</div>";
+                echo "<div style='color:green;'>normal</div>";
                 } else {
                 echo "<div style='color:red;'>Over Speed</div>" . $t - "80"; 
                 } ?></td>
